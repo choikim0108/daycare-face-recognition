@@ -46,6 +46,12 @@ def build_profiles(profile_dir, progress_callback=None):
         child_dir = os.path.join(profile_dir, child_name)
         image_files = [f for f in os.listdir(child_dir) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
         
+        # 사진이 너무 많아지면 학습 시간이 기하급수적으로 늘어나는 것을 방지 (최신 20장만 사용)
+        if len(image_files) > 20:
+            # 파일 수정 시간(최신순)으로 정렬하여 상위 20개만 추출
+            image_files.sort(key=lambda x: os.path.getmtime(os.path.join(child_dir, x)), reverse=True)
+            image_files = image_files[:20]
+        
         embeddings = []
         for img_file in image_files:
             img_path = os.path.join(child_dir, img_file)
