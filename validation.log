@@ -1,0 +1,25 @@
+customtkinter.windows.widgets.font warning: Preferred drawing method 'font_shapes' can not be used because the font file could not be loaded.
+Using 'circle_shapes' instead. The rendering quality will be bad!
+test_all_equal_and_nested_folder_combinations_rejected (test_review_flow.ReviewFlowTests.test_all_equal_and_nested_folder_combinations_rejected) ... ok
+test_approval_collision_preserves_existing_reference (test_review_flow.ReviewFlowTests.test_approval_collision_preserves_existing_reference) ... ok
+test_failed_copy_never_removes_review_source (test_review_flow.ReviewFlowTests.test_failed_copy_never_removes_review_source) ... ok
+test_group_and_no_face_cannot_be_approved (test_review_flow.ReviewFlowTests.test_group_and_no_face_cannot_be_approved) ... ok
+test_latest_twenty_cap_preserves_all_files (test_review_flow.ReviewFlowTests.test_latest_twenty_cap_preserves_all_files) ... ok
+test_only_explicit_approval_adds_reference (test_review_flow.ReviewFlowTests.test_only_explicit_approval_adds_reference) ... ok
+test_path_traversal_is_rejected_before_copy (test_review_flow.ReviewFlowTests.test_path_traversal_is_rejected_before_copy) ... ok
+test_repeated_collisions_do_not_overwrite (test_review_flow.ReviewFlowTests.test_repeated_collisions_do_not_overwrite) ... ok
+test_rerun_never_trains_unapproved_results (test_review_flow.ReviewFlowTests.test_rerun_never_trains_unapproved_results) ... ok
+test_results_cannot_be_reused_as_input_or_profiles_later (test_review_flow.ReviewFlowTests.test_results_cannot_be_reused_as_input_or_profiles_later) ... ok
+test_review_move_preserves_group_other_child_and_original (test_review_flow.ReviewFlowTests.test_review_move_preserves_group_other_child_and_original) ... ok
+test_same_child_move_is_noop (test_review_flow.ReviewFlowTests.test_same_child_move_is_noop) ... ok
+test_storage_failure_is_reported_and_original_is_preserved (test_review_flow.ReviewFlowTests.test_storage_failure_is_reported_and_original_is_preserved) ... ok
+test_threshold_is_respected (test_review_flow.ReviewFlowTests.test_threshold_is_respected) ... ok
+test_unknown_and_detector_errors_preserve_original (test_review_flow.ReviewFlowTests.test_unknown_and_detector_errors_preserve_original) ... ok
+test_wrong_child_and_external_source_cannot_be_approved (test_review_flow.ReviewFlowTests.test_wrong_child_and_external_source_cannot_be_approved) ... ok
+test_classify_correct_and_explicitly_approve (test_ui_flow.UIFlowTests.test_classify_correct_and_explicitly_approve) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 2.853s
+
+OK
+Failed to process group.jpg: no face
